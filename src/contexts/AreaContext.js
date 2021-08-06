@@ -35,6 +35,7 @@ const AreaContextProvider = (props) => {
                 return singleArea.area_name.en.toLowerCase() === lowerCasedInput || singleArea.area_name.bn.toLowerCase() === lowerCasedInput;
             });
             setSearchResult(result);
+            console.log("search result: ", result);
         }
     }
 
