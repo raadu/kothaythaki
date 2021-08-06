@@ -5,7 +5,7 @@ import SearchBarStyle from './SearchBar.module.scss';
 
 const SearchBar = () => {
     // Context
-    const {fetchAreas, filterAreaByName, areas} = useContext(AreaContext);
+    const {fetchAreas, filterAreaByName, searchSuggestions, searchResult, matchedLang} = useContext(AreaContext);
 
     // States
     const [searchString, setSearchString] = useState("");
@@ -18,6 +18,7 @@ const SearchBar = () => {
     const userInputHandler = (e) => {
         if(e.keyCode !== 13 && e.key !== 'Enter') {
             setSearchString(e.target.value);
+            searchSuggestions(e.target.value);
         }
         else {
             searchArea();
@@ -35,7 +36,7 @@ const SearchBar = () => {
         <div className={SearchBarStyle.searchBarContainer}>
             <input
                 placeholder="Search Area"
-                value={searchString}
+                value={searchResult.area_name && searchResult.area_name[matchedLang]}
                 onChange={userInputHandler}
                 onKeyDown={userInputHandler}
             />
