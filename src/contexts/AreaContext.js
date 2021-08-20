@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 // import data from "../data/city_corp.json";
+import uuid from 'react-uuid';
 
 export const AreaContext = createContext();
 
@@ -27,6 +28,11 @@ const AreaContextProvider = (props) => {
         })
         .then((json) => {
             console.log("json", json);
+            // let dataFound = [...json];
+            // dataFound.forEach((item) => {
+            //     item.id = uuid();
+            // });
+            // console.log(JSON.stringify(dataFound));
             setAreas(json);
             setInitialDataLoading(false);
         });
