@@ -1,6 +1,5 @@
 import React, { createContext, useState } from 'react';
 // import data from "../data/city_corp.json";
-import uuid from 'react-uuid';
 
 export const AreaContext = createContext();
 
@@ -39,6 +38,8 @@ const AreaContextProvider = (props) => {
     }
 
     const filterAreaByName = (input) => {
+        console.log('input: ', input);
+        
         let lowerCasedInput = input.toLowerCase();
 
         if(areas.length > 0) {
@@ -70,6 +71,7 @@ const AreaContextProvider = (props) => {
                         setSearchResult({});
                         return singleArea.area_name.bn.toLowerCase().includes(lowerCasedInput);
                     }
+                    // return null;
                 });
 
                 setSuggestions(result);

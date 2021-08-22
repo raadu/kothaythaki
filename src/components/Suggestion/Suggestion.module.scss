@@ -1,1 +1,9 @@
 @import '/src/App.scss';
+
+.suggestionItem {
+    background-color: #FFFFFF;
+}
+
+.suggestionItem_selected {
+    background-color: brown;
+}

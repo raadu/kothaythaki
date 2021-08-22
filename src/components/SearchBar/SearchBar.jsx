@@ -15,13 +15,17 @@ const SearchBar = () => {
         fetchAreas();
     }, []);
 
+    useEffect(() => {
+
+    });
+
     const userInputHandler = (e) => {
         if(e.keyCode !== 13 && e.key !== 'Enter') {
             setSearchString(e.target.value);
             searchSuggestions(e.target.value);
         }
         else {
-            searchArea();
+            // searchArea();
         }
     }
 
@@ -37,7 +41,7 @@ const SearchBar = () => {
             <input
                 placeholder="Search Area"
                 value={searchResult.area_name && searchResult.area_name[matchedLang]}
-                onChange={userInputHandler}
+                // onChange={userInputHandler}
                 onKeyDown={userInputHandler}
             />
             <button onClick={searchArea}>
