@@ -80,6 +80,11 @@ const AreaContextProvider = (props) => {
         }
     }
 
+    const clearSearchResult = () => {
+        setSearchResult({});
+        setSuggestions([]);
+    }
+
     return (
         <AreaContext.Provider value={{
             areas,
@@ -91,6 +96,7 @@ const AreaContextProvider = (props) => {
             suggestionsLoading,
             suggestions,
             matchedLang,
+            clearSearchResult,
         }}>
             {props.children}
         </AreaContext.Provider>

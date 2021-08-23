@@ -2,10 +2,12 @@
 import { useContext, useEffect, useState } from "react";
 import { AreaContext } from "../../contexts/AreaContext";
 import SearchBarStyle from './SearchBar.module.scss';
+import searchIcon from '../../assets/icons/search.svg';
+import cancelIcon from '../../assets/icons/cancel.svg';
 
 const SearchBar = () => {
     // Context
-    const {fetchAreas, filterAreaByName, searchSuggestions, searchResult, matchedLang} = useContext(AreaContext);
+    const {fetchAreas, filterAreaByName, searchSuggestions, searchResult, matchedLang, clearSearchResult} = useContext(AreaContext);
 
     // States
     const [searchString, setSearchString] = useState("");
@@ -14,10 +16,6 @@ const SearchBar = () => {
     useEffect(() => {
         fetchAreas();
     }, []);
-
-    useEffect(() => {
-
-    });
 
     const userInputHandler = (e) => {
         if(e.keyCode !== 13 && e.key !== 'Enter') {
@@ -35,18 +33,34 @@ const SearchBar = () => {
         }
     }
 
+    const clearInput = () => {
+        setSearchString("");
+        clearSearchResult();
+    }
+
 
     return (
         <div className={SearchBarStyle.searchBarContainer}>
+            <div 
+                className={SearchBarStyle.iconContainer}
+                onClick={searchString ? clearInput : null}
+            >
+                <img
+                    className={SearchBarStyle.icon}
+                    src={searchString ? cancelIcon : searchIcon}
+                    alt="Search"
+                    width={searchString ? "18" : "22"}
+                    height={searchString ? "18" : "22"}
+                />
+            </div>
+            
             <input
-                placeholder="Search Area"
-                value={searchResult.area_name && searchResult.area_name[matchedLang]}
-                // onChange={userInputHandler}
-                onKeyDown={userInputHandler}
+                className={SearchBarStyle.searchInput}
+                placeholder="এলাকার নাম"
+                value={searchResult?.area_name ? searchResult.area_name[matchedLang] : searchString}
+                onChange={userInputHandler}
+                // onKeyDown={userInputHandler}
             />
-            <button onClick={searchArea}>
-                Search
-            </button>
         </div>
     );
 }

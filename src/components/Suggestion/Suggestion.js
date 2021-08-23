@@ -74,8 +74,6 @@ const Suggestion = () => {
 
       useEffect(() => {
         if(selected) {
-            console.log('selected in effect: ', selected);
-            
             filterAreaByName(selected);
         }
       }, [selected]);
