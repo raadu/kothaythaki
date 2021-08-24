@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 5%;
-    padding-bottom: 5%;
+    // padding-bottom: 5%;
     position: relative;
 }
 
@@ -45,8 +45,8 @@
 
 .iconContainer {
     position: absolute;
-    top: 50%;
-    left: 62.2%;
+    top: 81%;
+    left: 62%;
     transform: translate(-50%, -50%);
     z-index: 1;
 

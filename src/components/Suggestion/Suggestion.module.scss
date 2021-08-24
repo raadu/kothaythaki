@@ -1,9 +1,42 @@
 @import '/src/App.scss';
 
-.suggestionItem {
-    background-color: #FFFFFF;
+.suggestionList {
+    border: 1px solid $color-black;
+    border-radius: 10px;
+    width: 29%;
+    height: 40vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 50px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border: 1px solid transparent;
+        background-clip: content-box;
+        background-color: $color-black;
+    }
 }
 
-.suggestionItem_selected {
-    background-color: brown;
+
+.suggestionItem {
+    background-color: #FFFFFF;
+    @extend .banglaFont;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.selected {
+    background-color: $color-black;
+    color: $font-white;
 }

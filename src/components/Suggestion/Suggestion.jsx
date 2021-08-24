@@ -80,12 +80,13 @@ const Suggestion = () => {
 
 
     return (
-        <div>
+        <div className={SuggestionStyle.suggestionList}>
             {suggestions && suggestions.map((item, i) => {
                 return( 
                     <div 
                         onClick={() => setSelected(item.area_name[matchedLang])}
-                        className={i===cursor ? SuggestionStyle.suggestionItem_selected : SuggestionStyle.suggestionItem}
+                        // className={i===cursor ? SuggestionStyle.suggestionItem_selected : SuggestionStyle.suggestionItem}
+                        className={`${SuggestionStyle.suggestionItem} ${i===cursor ? SuggestionStyle.selected : null}`}
                         key={uuid()}
                         onMouseEnter={() => setHovered(item)}
                         onMouseLeave={() => setHovered(undefined)}
