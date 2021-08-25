@@ -2,15 +2,28 @@ import { useContext } from "react";
 import { AreaContext } from "../../contexts/AreaContext";
 import ResultStyle from "./Result.module.scss";
 import Suggestion from "../Suggestion/Suggestion";
+import {getDigitBanglaFromEnglish} from '../../utils/enToBnNumberConvert';
 
 const Result = () => {
     // Contexts
     const {searchResult, suggestions} = useContext(AreaContext);
 
     const RenderSearchResult = () => {
-        return searchResult && Object.keys(searchResult).length > 0
-            ? `You are in ${searchResult.city_corporation}`
-            : "Search Which Dhaka City Corporation you belongs to";
+        return(
+            <div>
+                <div className={ResultStyle.resultText}>
+                    {searchResult && Object.keys(searchResult).length > 0
+                        ? `আপনি ঢাকা ${searchResult.city_corp_tag === "DNCC" ? "উত্তর" : "দক্ষিণ"} সিটি কর্পোরেশনে আছেন`
+                        : "জানুন আপনি কোন ঢাকা সিটি কর্পোরেশনে আছেন"
+                    }
+                </div>
+                {searchResult && Object.keys(searchResult).length > 0 ?
+                    <div className={ResultStyle.wardText}>
+                        ওয়ার্ড নাম্বারঃ {getDigitBanglaFromEnglish(searchResult.ward)}
+                    </div> : null
+                }
+            </div>
+        );
     }
 
     return (

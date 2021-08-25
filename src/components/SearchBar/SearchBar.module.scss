@@ -5,7 +5,6 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 5%;
-    // padding-bottom: 5%;
     position: relative;
 }
 
@@ -52,5 +51,16 @@
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .searchInput {
+        width: 50%;
+    }
+
+    .iconContainer {
+        top: 72%;
+        left: 73%;
     }
 }

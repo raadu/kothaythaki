@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react';
-// import data from "../data/city_corp.json";
 
 export const AreaContext = createContext();
 
@@ -26,20 +25,12 @@ const AreaContextProvider = (props) => {
             return res.json();
         })
         .then((json) => {
-            console.log("json", json);
-            // let dataFound = [...json];
-            // dataFound.forEach((item) => {
-            //     item.id = uuid();
-            // });
-            // console.log(JSON.stringify(dataFound));
             setAreas(json);
             setInitialDataLoading(false);
         });
     }
 
     const filterAreaByName = (input) => {
-        console.log('input: ', input);
-        
         let lowerCasedInput = input.toLowerCase();
 
         if(areas.length > 0) {
@@ -71,7 +62,7 @@ const AreaContextProvider = (props) => {
                         setSearchResult({});
                         return singleArea.area_name.bn.toLowerCase().includes(lowerCasedInput);
                     }
-                    // return null;
+                    return null;
                 });
 
                 setSuggestions(result);

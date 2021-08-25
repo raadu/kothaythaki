@@ -5,3 +5,15 @@
     justify-content: center;
     padding: 2%;
 }
+
+.resultText {
+    @extend .banglaFont;
+    font-weight: bold;
+}
+
+.wardText {
+    @extend .banglaFont;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}

@@ -7,7 +7,7 @@ import cancelIcon from '../../assets/icons/cancel.svg';
 
 const SearchBar = () => {
     // Context
-    const {fetchAreas, filterAreaByName, searchSuggestions, searchResult, matchedLang, clearSearchResult} = useContext(AreaContext);
+    const {fetchAreas, searchSuggestions, searchResult, matchedLang, clearSearchResult} = useContext(AreaContext);
 
     // States
     const [searchString, setSearchString] = useState("");
@@ -27,17 +27,11 @@ const SearchBar = () => {
         }
     }
 
-    const searchArea = () => {
-        if(searchString !== "") {
-            filterAreaByName(searchString);
-        }
-    }
 
     const clearInput = () => {
         setSearchString("");
         clearSearchResult();
     }
-
 
     return (
         <div className={SearchBarStyle.searchBarContainer}>
@@ -59,7 +53,6 @@ const SearchBar = () => {
                 placeholder="এলাকার নাম"
                 value={searchResult?.area_name ? searchResult.area_name[matchedLang] : searchString}
                 onChange={userInputHandler}
-                // onKeyDown={userInputHandler}
             />
         </div>
     );

@@ -6,7 +6,6 @@ import uuid from 'react-uuid';
 const useKeyPress = function (targetKey, ref) {
     const [keyPressed, setKeyPressed] = useState(false);
 
-
     function downHandler({ key }) {
         if (key === targetKey) {
             setKeyPressed(true);
@@ -52,30 +51,35 @@ const Suggestion = () => {
             prevState < suggestions.length - 1 ? prevState + 1 : prevState
           );
         }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [downPress]);
+
       useEffect(() => {
         if (suggestions.length && upPress) {
           setCursor(prevState => (prevState > 0 ? prevState - 1 : prevState));
         }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [upPress]);
+
       useEffect(() => {
         if (suggestions.length && enterPress) {
-            // console.log('suggestions[cursor] in ooo: ', suggestions[cursor].area_name[matchedLang]);
-            
           setSelected(suggestions[cursor].area_name[matchedLang]);
         }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [cursor, enterPress]);
+
       useEffect(() => {
         if (suggestions.length && hovered) {
           setCursor(suggestions.indexOf(hovered));
         }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [hovered]);
-
 
       useEffect(() => {
         if(selected) {
             filterAreaByName(selected);
         }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [selected]);
 
 
@@ -85,7 +89,6 @@ const Suggestion = () => {
                 return( 
                     <div 
                         onClick={() => setSelected(item.area_name[matchedLang])}
-                        // className={i===cursor ? SuggestionStyle.suggestionItem_selected : SuggestionStyle.suggestionItem}
                         className={`${SuggestionStyle.suggestionItem} ${i===cursor ? SuggestionStyle.selected : null}`}
                         key={uuid()}
                         onMouseEnter={() => setHovered(item)}

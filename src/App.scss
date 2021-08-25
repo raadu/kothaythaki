@@ -7,6 +7,8 @@
 @import "./scss/variables";
 
 body {
+    height: 100vh;
+    background-color: $body-color;
     margin: 0;
     font-family: -'CharukolaUltraLight', 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -20,5 +22,3 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-
-
