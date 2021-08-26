@@ -48,19 +48,35 @@
     left: 62%;
     transform: translate(-50%, -50%);
     z-index: 1;
-
-    &:hover {
-        cursor: pointer;
-    }
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
+    .searchBarContainer {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
     .searchInput {
-        width: 50%;
+        width: 60%;
     }
 
     .iconContainer {
-        top: 72%;
-        left: 73%;
+        top: 53%;
+        left: 79%;
+    }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2800px) {
+    .iconContainer {
+        top: 84%;
+        left: 62%;
+    }
+}
+
+@media only screen and (min-width: 2800px) {
+    .iconContainer {
+        top: 90%;
+        left: 62%;
     }
 }
