@@ -1,8 +1,8 @@
 # Introduction
 KothayThaki - Find which Dhaka City Corporation your area belongs to.<br/>
-Dhaka City Corporation data is used. You can contribute to the dataset [HERE](https://github.com/raadu/dhaka-city-corporation-data).<br/>
+Dhaka City Corporation open-sourced data is used. You can contribute to the dataset [HERE](https://github.com/raadu/dhaka-city-corporation-data).<br/>
 
-Created using React.js
+Created using React.js <br/>
 Check [React Documentation](https://reactjs.org/docs/getting-started.html) for help.
 
 # Installation 
@@ -11,7 +11,7 @@ At first clone the github repository to your local machine.
 git clone https://github.com/raadu/kothaythaki
 ```
 
-To run the app go to project directory and enter this command 
+To run the app go to project directory and enter these commands serially
 ```
 npm install
 npm start
