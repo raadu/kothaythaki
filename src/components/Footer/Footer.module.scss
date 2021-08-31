@@ -1,0 +1,15 @@
+@import "/src/App.scss";
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding: 2%;
+}
+
+.footerText {
+    @extend .banglaFont;
+    justify-content: center;
+    font-size: 0.8rem;
+    text-align: center;
+}
