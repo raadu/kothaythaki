@@ -13,7 +13,7 @@ const Result = () => {
             <div>
                 <div className={ResultStyle.resultText}>
                     {searchResult && Object.keys(searchResult).length > 0
-                        ? `আপনি ঢাকা ${searchResult.city_corp_tag === "DNCC" ? "উত্তর" : "দক্ষিণ"} সিটি কর্পোরেশনে আছেন`
+                        ? `আপনি ঢাকা ${searchResult.city_corp_tag === "DNCC" ? "উত্তর (North)" : "দক্ষিণ (South)"} সিটি কর্পোরেশনে আছেন`
                         : "জানুন আপনি কোন ঢাকা সিটি কর্পোরেশনে আছেন"
                     }
                 </div>
