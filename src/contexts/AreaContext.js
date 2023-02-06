@@ -27,6 +27,9 @@ const AreaContextProvider = (props) => {
         .then((json) => {
             setAreas(json);
             setInitialDataLoading(false);
+        })
+        .catch((error) => {
+            console.log("error", error);
         });
     }
 
