@@ -4371,33 +4371,13 @@
    },
    {
       "area_name": {
-         "en": "Meradia (Part-1)",
-         "bn": "মেরাদিয়া (১ম অংশ)"
+         "en": "Meradia",
+         "bn": "মেরাদিয়া"
       },
       "city_corporation": "Dhaka South City Corporation",
       "city_corp_tag": "DSCC",
       "ward": "3",
       "id": "df8d2a2-a52-7c5d-b01-70c3eeb028f6"
-   },
-   {
-      "area_name": {
-         "en": "Meradia (Part-3",
-         "bn": "মেরাদিয়া (৩য় অংশ)"
-      },
-      "city_corporation": "Dhaka South City Corporation",
-      "city_corp_tag": "DSCC",
-      "ward": "3",
-      "id": "ec7610b-57a5-14ca-3c2a-0f3def328"
-   },
-   {
-      "area_name": {
-         "en": "Meradia (Part-2)",
-         "bn": "মেরাদিয়া (২য় অংশ)"
-      },
-      "city_corporation": "Dhaka South City Corporation",
-      "city_corp_tag": "DSCC",
-      "ward": "3",
-      "id": "5824a7-c5d5-068-f3b0-278faf4ede58"
    },
    {
       "area_name": {
@@ -4421,8 +4401,8 @@
    },
    {
       "area_name": {
-         "en": "Dakshin Mugda Para",
-         "bn": "দক্ষিণ মুগদাপাড়া"
+         "en": "Mugda Para",
+         "bn": "মুগদাপাড়া"
       },
       "city_corporation": "Dhaka South City Corporation",
       "city_corp_tag": "DSCC",
@@ -4431,12 +4411,12 @@
    },
    {
       "area_name": {
-         "en": "Uttar Mugda Para",
-         "bn": "উত্তর মুগদাপাড়া"
+         "en": "Uttar Mugdapara Deputy Colony",
+         "bn": "উত্তর মুগদাপাড়া ডেপুটি কলোনী"
       },
       "city_corporation": "Dhaka South City Corporation",
       "city_corp_tag": "DSCC",
-      "ward": "6",
+      "ward": "5",
       "id": "47cc4c5-e61-cf46-604-24780e0ccb7"
    },
    {
@@ -7851,8 +7831,8 @@
    },
    {
       "area_name": {
-         "en": "RK Mission Road",
-         "bn": "আরকে মিশন রোড"
+         "en": "RK Mission Road (Holding 1 to 91/1)",
+         "bn": "আরকে মিশন রোড (হোল্ডিং ১ হতে ৯১/১)"
       },
       "city_corporation": "Dhaka South City Corporation",
       "city_corp_tag": "DSCC",
@@ -7901,16 +7881,6 @@
    },
    {
       "area_name": {
-         "en": "Madartek Dakshin (South)",
-         "bn": "মাদারটেক (দক্ষিণ)"
-      },
-      "city_corporation": "Dhaka South City Corporation",
-      "city_corp_tag": "DSCC",
-      "ward": "4",
-      "id": "a0303a-da1c-8475-abce-1f8e54ce881"
-   },
-   {
-      "area_name": {
          "en": "Bashabo Madhya  (Middle)",
          "bn": "বাসাবো (মধ্য)"
       },
@@ -7921,33 +7891,13 @@
    },
    {
       "area_name": {
-         "en": "Madartek Purbo (East)",
-         "bn": "মাদারটেক (পূর্ব)"
-      },
-      "city_corporation": "Dhaka South City Corporation",
-      "city_corp_tag": "DSCC",
-      "ward": "4",
-      "id": "0ac8e15-b7c-55d-2ffd-6b20d4cd2d70"
-   },
-   {
-      "area_name": {
-         "en": "Bashabo Purba  (East - Part) ",
-         "bn": "বাসাবো (পূর্ব অংশ)"
+         "en": "Bashabo (Purba / East) Holding 29/1 to Last",
+         "bn": "বাসাবো (পূর্ব অংশ) হোল্ডিং ২৯/১ থেকে শেষ"
       },
       "city_corporation": "Dhaka South City Corporation",
       "city_corp_tag": "DSCC",
       "ward": "4",
       "id": "7a10a6-388-4a56-0bee-a7db58a2f16"
-   },
-   {
-      "area_name": {
-         "en": "Madartek Uttar (North)",
-         "bn": "মাদারটেক (উত্তর)"
-      },
-      "city_corporation": "Dhaka South City Corporation",
-      "city_corp_tag": "DSCC",
-      "ward": "4",
-      "id": "5e23ece-d052-861-7580-0e2be002868"
    },
    {
       "area_name": {
@@ -7958,16 +7908,6 @@
       "city_corp_tag": "DSCC",
       "ward": "4",
       "id": "aefb316-84d4-8bd1-1b7f-d1737e615414"
-   },
-   {
-      "area_name": {
-         "en": "Madar Tek (West)",
-         "bn": "মাদারটেক (পশ্চিম)"
-      },
-      "city_corporation": "Dhaka South City Corporation",
-      "city_corp_tag": "DSCC",
-      "ward": "4",
-      "id": "68322-28a-34c-8f1-0c3bb83caab"
    },
    {
       "area_name": {
@@ -8671,8 +8611,8 @@
    },
    {
       "area_name": {
-         "en": "Bashabo Purbo (Block A)",
-         "bn": "বাসাবো (পূর্ব - ব্লক এ)"
+         "en": "Bashabo (Purbo / East) Holding 1 to 59",
+         "bn": "বাসাবো (পূর্ব) হোল্ডিং ১ থেকে ৫৯"
       },
       "city_corporation": "Dhaka South City Corporation",
       "city_corp_tag": "DSCC",
@@ -8681,8 +8621,8 @@
    },
    {
       "area_name": {
-         "en": "Rajarbagh (A & B)",
-         "bn": "রাজারবাগ (এ, বি)"
+         "en": "Rajarbagh (South & North)",
+         "bn": "রাজারবাগ (উত্তর ও দক্ষিণ)"
       },
       "city_corporation": "Dhaka South City Corporation",
       "city_corp_tag": "DSCC",
@@ -9591,62 +9531,62 @@
    },
    {
       "area_name": {
-         "en": "",
-         "bn": ""
+         "en": "Bashabo Poschim (West)",
+         "bn": "বাসাবো পশ্চিম"
       },
-      "city_corporation": "",
-      "city_corp_tag": "",
-      "ward": "",
+      "city_corporation": "Dhaka South City Corporation",
+      "city_corp_tag": "DSCC",
+      "ward": "4",
       "id": "2a94e4ec-5824-4f69-8e3a-5032b38557c8"
    },
    {
       "area_name": {
-         "en": "",
-         "bn": ""
+         "en": "Madartek",
+         "bn": "মাদারটেক"
       },
-      "city_corporation": "",
-      "city_corp_tag": "",
-      "ward": "",
+      "city_corporation": "Dhaka South City Corporation",
+      "city_corp_tag": "DSCC",
+      "ward": "4",
       "id": "6215e4fd-4b2a-4fe2-9a2a-83a39ed961bd"
    },
    {
       "area_name": {
-         "en": "",
-         "bn": ""
+         "en": "Bashabo Kodomtola",
+         "bn": "বাসাবো কদমতলা"
       },
-      "city_corporation": "",
-      "city_corp_tag": "",
-      "ward": "",
+      "city_corporation": "Dhaka South City Corporation",
+      "city_corp_tag": "DSCC",
+      "ward": "5",
       "id": "b68a1c2d-7b20-45c1-b96a-537e5d5cb1e1"
    },
    {
       "area_name": {
-         "en": "",
-         "bn": ""
+         "en": "Sonali Bank Colony",
+         "bn": "সোনালী ব্যাংক কলোনী"
       },
-      "city_corporation": "",
-      "city_corp_tag": "",
-      "ward": "",
+      "city_corporation": "Dhaka South City Corporation",
+      "city_corp_tag": "DSCC",
+      "ward": "8",
       "id": "a49b295c-7d80-4cfc-9b34-8f59357c606c"
    },
    {
       "area_name": {
-         "en": "",
-         "bn": ""
+         "en": "RK Mission Road Gopibagh",
+         "bn": "আর কে মিশন রোড গোপীবাগ"
       },
-      "city_corporation": "",
-      "city_corp_tag": "",
-      "ward": "",
+      "city_corporation": "Dhaka South City Corporation",
+      "city_corp_tag": "DSCC",
+      "ward": "8",
       "id": "6eb27b36-89c5-4d43-8a49-8c48163aa0bf"
    },
    {
       "area_name": {
-         "en": "",
-         "bn": ""
+         "en": "Motijheel",
+         "bn": "মতিঝিল"
       },
-      "city_corporation": "",
-      "city_corp_tag": "",
-      "ward": "",
+      "city_corporation": "Dhaka South City Corporation",
+      "city_corp_tag": "DSCC",
+      "ward": "8",
       "id": "ac04e325-480c-484c-9c02-d6ef73a58a43"
    },
    {
@@ -9678,5 +9618,65 @@
       "city_corp_tag": "",
       "ward": "",
       "id": "f9a68048-9c9f-47a5-a8c8-cf0c7a9f9672"
+   },
+   {
+      "area_name": {
+         "en": "",
+         "bn": ""
+      },
+      "city_corporation": "",
+      "city_corp_tag": "",
+      "ward": "",
+      "id": "ec7610b-57a5-14ca-3c2a-0f3def328"
+   },
+   {
+      "area_name": {
+         "en": "",
+         "bn": ""
+      },
+      "city_corporation": "",
+      "city_corp_tag": "",
+      "ward": "",
+      "id": "5824a7-c5d5-068-f3b0-278faf4ede58"
+   },
+   {
+      "area_name": {
+         "en": "",
+         "bn": ""
+      },
+      "city_corporation": "",
+      "city_corp_tag": "",
+      "ward": "",
+      "id": "0ac8e15-b7c-55d-2ffd-6b20d4cd2d70"
+   },
+   {
+      "area_name": {
+         "en": "",
+         "bn": ""
+      },
+      "city_corporation": "",
+      "city_corp_tag": "",
+      "ward": "",
+      "id": "a0303a-da1c-8475-abce-1f8e54ce881"
+   },
+   {
+      "area_name": {
+         "en": "",
+         "bn": ""
+      },
+      "city_corporation": "",
+      "city_corp_tag": "",
+      "ward": "",
+      "id": "5e23ece-d052-861-7580-0e2be002868"
+   },
+   {
+      "area_name": {
+         "en": "",
+         "bn": ""
+      },
+      "city_corporation": "",
+      "city_corp_tag": "",
+      "ward": "",
+      "id": "68322-28a-34c-8f1-0c3bb83caab"
    }
 ]
